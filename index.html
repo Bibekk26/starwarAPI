@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars API</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background: url('https://images.unsplash.com/photo-1472457897821-70d3819a0e24?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <header class="text-center pt-5">
+        <a href="https://swapi.co/">
+        <img src="https://fontmeme.com/temporary/ddd83e87059de4cace51a70e0dc33472.png" alt="Temporary Image">    
+        </a>
+
+       </header>
+        <div class="buttons">
+            <button class="button" id="peopleBtn">
+                <i class="fas fa-users"></i>
+                <span>People</span>
+            </button>
+            <button class="button" id="filmsBtn">
+                <i class="fas fa-film"></i>
+                <span>Films</span>
+            </button>
+            <button class="button" id="starshipsBtn">
+                <i class="fas fa-space-shuttle"></i>
+                <span>Starships</span>
+            </button>
+            <button class="button" id="speciesBtn">
+                <i class="fab fa-reddit-alien"></i>
+                <span>Species</span>
+            </button>
+        </div>
+        <div id="dataContainer" class="data-container"></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
